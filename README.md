@@ -7,13 +7,19 @@ mkdir data/
 ```
 Download [all.zip](https://www.kaggle.com/c/8076/download-all) and put files in data/
 
+## Model
+
+### DNN
+Fully Connected neural network  
+with input : Bag of Words vector 
+
 ## Usage
 
 ### Hyperparameters in flags.py
 `model_type` : dnn  
-`batch_size` : batch size / one training step  
-`dp` : keep rate  
 `units` : numbers of neuron of layers for DNN  
+`dp` : keep rate  
+`batch_size` : batch size / one training step  
 
 ### Process
 To generate word dictionary
@@ -43,7 +49,7 @@ the output file would be data/prediction.csv
 ### Files
 `process.py` : generate dict in data/word.json
 `flags.py` : all setting  
-`main.py` : main function  
 `utils.py` : get date batch  
+`main.py` : main function  
 `model.py` : model structure  
 
