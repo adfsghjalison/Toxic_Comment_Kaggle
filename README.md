@@ -56,7 +56,7 @@ the output file would be data/prediction.csv
 `model/` : store models 
 
 ### Files
-`process.py` : generate dict in data/dict
+`process.py` : generate dict in data/dict  
 `flags.py` : all setting  
 `main.py` : main function  
 `utils.py` : get date batch  
