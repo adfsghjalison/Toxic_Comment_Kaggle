@@ -16,10 +16,11 @@ with input : Bag of Words vector
 ## Usage
 
 ### Hyperparameters in flags.py
-`model_type` : dnn  
-`units` : numbers of neuron of layers for DNN  
-`dp` : keep rate  
+`model_type` : DNN / CNN / RNN
+`max_length` : max sentence length for CNN or RNN  
 `batch_size` : batch size / one training step  
+`dp` : keep rate  
+`units` : numbers of neuron of layers for DNN, CNN or RNN cells  
 
 ### Process
 To generate word dictionary
@@ -28,9 +29,17 @@ python process.py
 ```
 
 ### Train
-for DNN (95%):
+for DNN (93%):
 ```
-python main.py --mode train --model_type dnn
+python main.py --mode train --model_type DNN
+```
+for CNN (95%):
+```
+python main.py --mode train --model_type CNN
+```
+for RNN (95%):
+```
+python main.py --mode train --model_type RNN
 ```
 
 ### Test
@@ -47,9 +56,9 @@ the output file would be data/prediction.csv
 `model/` : store models 
 
 ### Files
-`process.py` : generate dict in data/word.json
+`process.py` : generate dict in data/dict
 `flags.py` : all setting  
-`utils.py` : get date batch  
 `main.py` : main function  
+`utils.py` : get date batch  
 `model.py` : model structure  
 
