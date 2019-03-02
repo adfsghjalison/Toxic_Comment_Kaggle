@@ -16,7 +16,7 @@ with input : Bag of Words vector
 ## Usage
 
 ### Hyperparameters in flags.py
-`model_type` : DNN / CNN / RNN
+`model_type` : DNN / CNN / RNN  
 `max_length` : max sentence length for CNN or RNN  
 `batch_size` : batch size / one training step  
 `dp` : keep rate  
